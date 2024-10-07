@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE HUB</title>
+    <link rel="shortcut icon" href="Untitled-1MOBILE_page-0001.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+            /* margin-top: 50px; */
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: auto;
+            max-width: 1250px;
+            padding: 50px;
+            height: auto;
+        }
+
+        .photo a {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            color: #000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        .photo a:hover {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            color: #0064de;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+        .photo img {
+            width: 50%;
+            height: 50%;
+        }
+
+        @media(max-width:850px) {
+            .photos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: auto;
+                max-width: 1250px;
+                padding: 25px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Untitled-1MOBILE_page-0001-ai-brush-removebg-0qb7hvqi.png" alt="Error">
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brand.html">Select your Brand</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://wa.me/9042215937" id="no"><i class="fa-solid fa-phone "
+                            style="color: #000000;"></i>90422
+                        15937</a></li>
+                <li onclick="Search()"><i class="fa-solid fa-magnifying-glass"
+                        style="font-size: 25px; cursor: pointer;"></i></li>
+                <button id="hamburger" onclick="Burger()"><i class="fa-solid fa-bars"></i></button>
+            </ul>
+            <ul id="nav-ham">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brand.html">Select your Brand</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://wa.me/9042215937" id="no"><i class="fa-solid fa-phone "
+                            style="color: #000000;"></i>90422
+                        15937</a></li>
+                <!-- <li onclick="Search()"><i class="fa-solid fa-magnifying-glass"
+                        style="font-size: 25px; cursor: pointer;"></i></li> -->
+            </ul>
+            <form action="" id="form" onsubmit="return false;">
+                <input type="search" id="search" placeholder="Search Model">
+                <button id="search-btn" onclick="searchProduct()">Search</button>
+            </form>
+        </nav>
+    </header>
+    <!-- <h1>Select Our Brand</h1> -->
+    <section>
+        <div class="photos" id="product-container">
+            <div class="photo" data-product="Apple">
+                <a href="apple.html">
+                    <img src="img/apple_logo_PNG19673.png" alt="">
+                    <p>Apple</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="samsung.html">
+                    <img src="img/S7G6vS0DVLugG3SNymmJQ2419MYdV8NGEmPVQhuo.png" alt="">
+                    <p>Samsung</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="gionee.html">
+                    <img src="img/CtL4sdW2g6JtyTROHrBO2E05Kab9bDcP7a9YvQuf.png" alt="">
+                    <p>Gionee</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="vivo.html">
+                    <img src="img/dfsYJp3SZUx4SUuVo6tGpxFOZYFjTofmvBUJMnf0.png" alt="">
+                    <p>Vivo</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="nokia.html">
+                    <img src="img/fKgm4ZDznpdXp3CYWsh0bFwlkk4KBCTiWt7WrGDD.png" alt="">
+                    <p>Nokia</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="oneplus.html">
+                    <img src="img/IkvSA3vaXf4RT3ZCIDJA8UDd5MICWs60CQ70cPaf.png" alt="">
+                    <p>OnePlus</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="realme.html">
+                    <img src="img/kEPR4sKeIhdmJPXvGLUuuFEA0nocsOtecTOx3v5t.png" alt="">
+                    <p>Realme</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="google.html">
+                    <img src="img/LbLyWLOA7FtgW2IP8otPBJfqF7FnNN81ImvQ3hBZ.png" alt="">
+                    <p>Google</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="huwai.html">
+                    <img src="img/LsxmV1jYniRzccTtUSSIJABhaQCFgpsb54xStvG4.png" alt="">
+                    <p>Huawei</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="coolpad.html">
+                    <img src="img/LUkcoVmi7TweUnSSYKgbiUlJtq8mYSh01ajN2NiK.png" alt="">
+                    <p>Coolpad</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="oppo.html">
+                    <img src="img/NCs4Us4MN5Ntz6SldLHrThvtgtqPY2zx3EGVAlxn.png" alt="">
+                    <p>Oppo</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="lg.html">
+                    <img src="img/yCiKFNWLGHCT5ste8z7k34k7WDU0DbHtDP7tJ2ae.png" alt="">
+                    <p>LG</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="asus.html">
+                    <img src="img/xQ6E5T413PTwBZnHSYOmGBO0vZU88sPjFWXMCyhQ.png" alt="">
+                    <p>Asus</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="honor.html">
+                    <img src="img/VRctA3Mz0FBNXergR6305WnpkiP8uWrNWwLgKLb0.png" alt="" style="object-fit: contain;">
+                    <p>Honor</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="htc.html">
+                    <img src="img/TqsZ3TmINISom30Js0YHVdIXpgRYGsfMggulwtxf.png" alt="">
+                    <p>HTC</p>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="sony.html">
+                    <img src="img/m2aXMg1VhpEiTnSqpfGAVIotWuvOo9DdBLGTtvpB.png" alt="">
+                    <p>Sony</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="banner5">
+        <div class="parent">
+            <div class="child">
+                <img src="Untitled-1MOBILE_page-0001.jpg" alt="">
+                <p>A startup that specialises in mobile screen repair services. We Offer doorstep mobile
+                    screen
+                    replacement at an unbelievable pricing.</p>
+            </div>
+            <div class="child">
+                <h1 style="position: relative;margin-left: -70px;">Links</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Select your Brand</li>
+                    <li>Our Story</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="child">
+                <ul>
+                    <li></li>
+                    <br>
+                    <li>Select your Brand</li>
+                    <li>Privacy Policy</li>
+                    <li>Report an Issue</li>
+                    <li>Repository</li>
+                </ul>
+            </div>
+            <div class="child" id="footer4">
+                <h2>Contact</h2>
+                <p>order@mobilehub.in <br>
+
+                    90422 15937<br>
+
+                    Gudiyatham: Modern Tower, no.23, F6 ,First floor, Westcott Rd, Royapettah, Gudiyatham, Tamil Nadu
+                    632602 <br>
+
+                </p>
+            </div>
+        </div>
+        <p class="footer4p"> All product names, logos, brands are property of the respective owners. All company, product and
+            service
+            names used here are for identification purposes only. Use of these names, logos, brands does not imply
+            endorsements.</p><br><br><br><br><br>
+        <p>© 2024 MobileHub. All Rights Reserved.</p>
+        <div class="chat-icon" id="chat-icon" onclick="toggleChat()">
+            💬
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <h2>Mobile Service Shop Bot</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="bot-message">Hi! How can I assist you today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

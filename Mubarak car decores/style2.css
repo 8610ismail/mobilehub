@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    /* background-color: beige; */
+    font-family: "Rubik", sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    position: relative;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    background-color: #0095ff;
+    backdrop-filter: blur(30px);
+    background: none;
+    color: black;
+
+}
+
+header img {
+    width: 10%;
+    height: 15vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+}
+
+#nav-ham {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+nav #no {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+nav li:nth-child(6):hover {
+    text-decoration: underline;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.005);
+
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.mobile-form {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.345);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Untitled-1MOBILE_page-0001-ai-brush-removebg-0qb7hvqi.png);
+}
+
+#mobile-form {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.345);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Untitled-1MOBILE_page-0001-ai-brush-removebg-0qb7hvqi.png);
+}
+
+#mobile-form input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    width: 50%;
+    border: none;
+}
+
+#mobile-form select {
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+
+}
+
+#mobile-form option {
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+
+}
+
+#mobile-form option:hover {
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    color: #0095ff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+
+}
+
+#mobile-form textarea {
+    padding: 10px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+
+}
+
+#mobile-form button {
+    padding: 10px 20px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in;
+}
+
+#mobile-form button:hover {
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.806);
+    background-color: #0095ff;
+    color: #fff;
+    font-size: 18px;
+}
+
+@media(max-width:850px) {
+    #hamburger {
+        display: flex;
+    }
+
+    #nav li {
+        display: none;
+    }
+
+    #hamburger {
+        padding: 10px;
+        font-size: 25px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #nav-ham {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-evenly;
+        align-items: start;
+        position: fixed;
+        top: 75px;
+        right: 0;
+        padding: 10px;
+        background-color: #00000088;
+        backdrop-filter: blur(25px);
+        color: #fff;
+    }
+
+    #nav-ham #no {
+        color: #000000;
+    }
+
+    #nav-ham #search-icon {
+        display: none;
+    }
+
+    #nav-ham li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    header img {
+        width: 30%;
+        height: 15vh;
+    }
+
+}
